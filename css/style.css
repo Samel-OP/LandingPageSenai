@@ -263,6 +263,7 @@ footer span{
     }
 
     .nav_header{
+       display: none;
        background-color: black;
        flex-direction: column;
        position: absolute;
