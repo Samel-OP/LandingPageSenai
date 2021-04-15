@@ -14,13 +14,15 @@
 }
 
 header{
+    display: flex;
+    justify-content: flex-end;
     background-color: #F9003D;
     height: 60px;
     position: fixed;
     z-index: 999;
     width: 100%;
     top: 0;
-    padding-left: 1150px ;
+    padding-left: 425px;
 }
 
 .container_header{
@@ -43,6 +45,10 @@ header{
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
+}
+
+.menu_btn{
+    display: none;
 }
 
 main{
@@ -210,7 +216,7 @@ hr{
     width: 900px;
     height: 203px;
     background-color: #010010;
-    padding: 50px;
+    padding: 60px 5px 50px 5px;
     border: 2px solid #a259f7;
 }
 
@@ -224,7 +230,7 @@ hr{
 
 .img_mapa{
     position: absolute;
-    top: 110px;
+    top: 165px;
     left: 1050px;
 }
 
@@ -240,4 +246,159 @@ footer span{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: #fff;
+}
+
+@media (max-width:420px){
+
+    header {
+        width: 420px;
+        padding: unset;     
+    }
+
+    .container_header{
+        width: 100%; 
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 30px;
+    }
+
+    .nav_header{
+       background-color: black;
+       flex-direction: column;
+       position: absolute;
+       top: 60px;
+       left: 0;
+       justify-content: space-evenly;
+       height: 300px;
+       width: 100%;
+    }
+
+    .menu_btn {
+        display: inline-block;
+    }
+
+    .menu_btn i{
+        color: white;
+        font-size: 30px;
+    }
+
+    .container{
+        width: 80vw;
+    }
+
+    .container_banner{
+        display: flex;
+        justify-content: center;
+        height: 615px;
+    }
+
+    .fundo_banner{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .box_conteudo_banner{
+        left: 0;
+        align-items: center;
+        top: 120px;
+    }
+
+    h1{
+        width: 90%;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    hr{
+        width: 90%;
+        margin: 30px 0;
+    }
+
+    .box_conteudo_banner span{
+        font-size: 35px;
+        margin-top: 35px;
+    }
+
+    .box_conteudo_banner img{
+        width: 45px;
+        margin-top: 35px;
+    }
+
+    .container_sobre{
+       height: auto;
+    }
+
+    .container_sobre h2{
+        font-size: 3.4em;
+        margin: 0 0 50px 0;
+    }
+
+    .img_box_sobre{
+        width: 80vw;
+        
+    }
+
+    .box_sobre{
+        flex-direction: column;
+    }
+
+    .box_participantes{
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .box_participantes h3{
+        width: auto;
+        font-size: 2.3em;
+        margin: 50px 0;
+    }
+
+    .box_participantes p{
+        width: auto;
+        text-align: justify;
+    }
+
+    .container_info{
+        height: 500px;
+        flex-direction: column;
+        margin: 30px 0;
+        padding-left: 25px;
+    }
+
+    .endereco{
+        height: 975px;
+        padding-bottom: 400px;
+    }
+
+    .endereco h2{
+        width: unset;
+    }
+
+    .box_endereco{
+        width: 85vw;
+        height: 300px;
+        padding-top: 25px;
+    }
+
+    .box_endereco p {
+        margin: 10px 5px ;
+        padding: 30px;
+        width: 100%;
+        font-size: 26px;
+    }
+
+    .img_mapa { 
+        width: 85vw;
+        height: 300px;
+        text-align: center;
+        position: absolute;
+        top: 535px;
+        left: 32px;
+    }
+
+    footer span{
+        width: 80vw;
+        text-align: center;
+    }
 }
